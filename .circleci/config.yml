@@ -73,7 +73,7 @@ orbs:
             default: out
         steps:
           - setup_npm
-          - npm publish <<parameters.dir>>
+          - run: npm publish <<parameters.dir>>
 
       setup_git:
         parameters:
