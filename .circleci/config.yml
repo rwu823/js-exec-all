@@ -159,7 +159,7 @@ orbs:
         executor: default
         steps:
           - checkout_install
-          - run: yarn tslint -p .
+          - run: npx tslint -p . -e package.json
       build:
         executor: default
         steps:
