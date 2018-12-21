@@ -8,7 +8,7 @@ const execAll: ExecAll = (RE, str) => {
 
   let { flags } = RE
 
-  if (RE.global) {
+  if (!RE.global) {
     flags = `g${flags}`
   }
 
