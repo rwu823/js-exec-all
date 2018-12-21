@@ -1,0 +1,29 @@
+{
+  "name": "js-exec-all",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "exec",
+    "all",
+    "regexp"
+  ],
+  "devDependencies": {
+    "@rwu823/ts-base": "github:rwu823/ts-base#latest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint -p .",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "transcrypt": "curl -s https://raw.githubusercontent.com/elasticdog/transcrypt/master/transcrypt | bash -s --",
+    "build": "rm -rf out && tsc && cp package.json out"
+  }
+}
