@@ -176,6 +176,12 @@ orbs:
           - restore_cache:
               key: out#{{ .Revision }}
           - deploy_to_npm
+          - run:
+              name: Push Git Tag
+              command: |
+                TAG=v$VER
+                git tag $TAG
+                git push --quiet $TOKEN_REPO $TAG
 
 workflows:
   version: 2
