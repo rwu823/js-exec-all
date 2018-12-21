@@ -14,7 +14,6 @@
   <a href="https://codecov.io/gh/rwu823/js-exec-all" alt="Coverage">
     <img src="https://flat.badgen.net/codecov/c/github/rwu823/js-exec-all" />
   </a>
-  <img src="https://flat.badgen.net/github/license/rwu823/js-exec-all" />
 </p>
 
 ## Why
